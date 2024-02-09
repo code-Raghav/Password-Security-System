@@ -11,7 +11,7 @@ Upon system activation, the user's input password is compared with the stored pa
 1. **Comparison**: Each bit of the input password is XORed with the corresponding bit of the stored password via XOR gates. Identical bits result in a zero output, indicating a match at that position.
 2. **Inversion**: The outputs of the XOR gates are then fed into a NOT gate, converting zeroes (matches) to ones.
 3. **Validation**: These inverted signals are input into an AND gate. If all bits match (all ones after inversion), the AND gate outputs a high signal, lighting up the "valid" indicator bulb or green bulb.
-4. **Mismatch Handling**: Any discrepancy between the input and stored passwords results in a non-zero output from the XOR gates, which eventually triggers the "invalid" indicator bulb after passing through the logic gate sequence.
+4. **Mismatch Handling**: Any discrepancy between the input and stored passwords results in a non-zero output from the XOR gates, which eventually triggers the "invalid" indicator bulb or the red buln after passing through the logic gate sequence.
 
 ## Project Components
 
@@ -20,6 +20,24 @@ Upon system activation, the user's input password is compared with the stored pa
 - **AND Gates**: Validates the final comparison result to trigger the appropriate indicator bulb.
 - **Switches**: Eight switches in total, divided into two sets for password storage and user input.
 - **Indicator Bulbs**: Two bulbs indicating the authentication result - one for a valid match and another for an invalid match.
+
+  
+## Circuit
+
+![4-Bit Password Security System](Images/Circuit.png)
+Note that the U23 Switch is toggled off, which renders the system off and no bulb is active.
+
+## Valid Password Circuit
+
+This image demonstrates the circuit configuration when the user enters a valid password, resulting in the activation of the "valid" indicator bulb.
+
+![Valid Password Circuit](Images/Valid.png)
+
+## Invalid Password Circuit
+
+Here is how the circuit behaves when the user enters an invalid password, leading to the lighting of the "invalid" indicator bulb.
+
+![Invalid Password Circuit](Imgaes/Invalid.png)
 
 ## Conclusion
 
