@@ -37,7 +37,7 @@ This image demonstrates the circuit configuration when the user enters a valid p
 
 Here is how the circuit behaves when the user enters an invalid password, leading to the lighting of the "invalid" indicator bulb.
 
-![Invalid Password Circuit](Imgaes/Invalid.png)
+![Invalid Password Circuit](Images/Invalid.png)
 
 ## Conclusion
 
